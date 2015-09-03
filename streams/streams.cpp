@@ -22,13 +22,11 @@ int main() {
     input_file.open(FILE_NAME.c_str());
 
     string aa;
-    string ab;
-    input_file >> aa;
-    input_file >> ab;
+    getline(input_file, aa);
 
     input_file.close();
 
-    cout << aa << " " << ab << endl;
+    cout << aa << endl;
 
     return 1;
 }
